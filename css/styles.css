@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -67,7 +73,7 @@ a {
   font-weight: bold;
 }
 
-a::after {
+.link-arrow::after {
   content: "-->";
   margin-left: 5px;
 }
@@ -154,4 +160,67 @@ a:hover::after {
 
 .icon--primary {
   fill: var(--color-primary);
+}
+
+/* Buttons */
+
+.button {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
+  white-space: nowrap;
+}
+
+.button--primary {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.button--primary:hover {
+  background-color: #4294fe;
+}
+
+.button--secondary {
+  color: white;
+  background-color: var(--color-secondary);
+}
+
+.button--secondary:hover {
+  background-color: #1bdcfe;
+}
+.button--accent {
+  color: white;
+  background-color: var(--color-accent);
+}
+
+.button--accent:hover {
+  background-color: #fd4d20;
+}
+
+.button--outline {
+  color: var(--color-heading);
+  background-color: white;
+  border: 2px solid var(--color-heading);
+}
+
+.button--outline:hover {
+  color: white;
+  background-color: var(--color-heading);
+}
+
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
