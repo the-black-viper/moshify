@@ -435,3 +435,43 @@ a:hover::after {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Testimonials */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__icon {
+  color: var(--color-heading);
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -3.2rem;
+  background-color: var(--color-accent);
+}
+
+.testimonial__image .icon {
+  fill: whitesmoke;
+}
+
+.testimonial .quote {
+  margin-left: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+}
