@@ -222,6 +222,10 @@ a:hover::after {
   display: inline-block;
 }
 
+.button--stretched {
+  padding: 2rem 6rem;
+}
+
 @media screen and (min-width: 1024px) {
   .button {
     font-size: 1.5rem;
@@ -473,5 +477,46 @@ a:hover::after {
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
+  }
+}
+
+/* Callouts */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.callout__heading {
+  color: white;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout .button {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--cols-2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .button {
+    margin: 0 2rem;
+    justify-self: start;
   }
 }
