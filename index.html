@@ -13,21 +13,19 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body style="padding: 3rem">
-    <div class="callout callout--primary">
-      <div class="grid grid--cols-2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready to get started</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            possimus dolorem ab facilis aperiam, expedita autem adipisci sint
-            cum nam.
-          </p>
-        </div>
-        <a class="button button--secondary button--stretched" href="#"
-          >Get started</a
-        >
+  <body>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Header</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="./images/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+        natus!
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
