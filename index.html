@@ -14,24 +14,20 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Block heading</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-          qui deserunt quis a repellat quos alias sint corporis porro vitae?
-        </p>
-      </header>
-    </section>
-    <section class="block block--dark block--skewed-left">
-      <header class="block__header container">
-        <h2 class="block__heading">Block heading</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-          qui deserunt quis a repellat quos alias sint corporis porro vitae?
-        </p>
-      </header>
-    </section>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"
+        ><img src="./images/logo.svg" alt="logo"
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="./images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="./js/main.js"></script>
   </body>
 </html>
