@@ -597,7 +597,7 @@ a:hover::after {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .block__header {
@@ -708,7 +708,7 @@ a:hover::after {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 0;
+    padding-top: 4rem;
   }
 
   .hero__content {
@@ -734,7 +734,7 @@ a:hover::after {
   font-weight: 600;
   justify-items: center;
   max-width: 720px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 @media screen and (min-width: 768px) {
