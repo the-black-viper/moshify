@@ -14,34 +14,74 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block container block--domain">
-      <header class="block__header">
-        <h2>Starting at $9 per month</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-          exercitationem?
-        </p>
-      </header>
-      <div class="input-group">
-        <input
-          type="text"
-          class="input"
-          placeholder="Enter domain name here..."
-        />
-        <button class="button button--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="./images/sprite.svg#search"></use></svg
-          >Search
-        </button>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="./images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+              <li><a href="#">Domains</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="./images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+              <li><a href="#">Domains</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="./images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+              <li><a href="#">Domains</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Domains</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="./images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+              <li><a href="#">Domains</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="images/logo.svg" alt="Company Logo" />
+          <p class="footer_copyright">Copyright 2020 Joshua Javier</p>
+        </div>
       </div>
-      <ul class="list block--domain__prices">
-        <li><span class="badge badge--secondary">.com $9</span></li>
-        <li>.sg $10</li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.xyz $10</li>
-      </ul>
-    </section>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
