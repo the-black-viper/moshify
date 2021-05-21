@@ -754,6 +754,7 @@ a:hover::after {
 
 .block--plans .grid {
   gap: 8rem 4rem;
+  justify-content: center;
 }
 
 .block--plans .plan {
